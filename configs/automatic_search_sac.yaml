@@ -1,0 +1,24 @@
+env: automatic_search
+policy: SACD
+max_timesteps: 200000
+max_episodes: 2471
+max_episode_steps: 50
+eval_episodes: 10
+eval_freq: 5000
+trajectory_path: results/SAC
+checkpoints_path: checkpoints/SAC
+
+discount: 0.99
+weight_decay: 0.0
+actor_learning_rate: 0.0003
+critic_learning_rate: 0.0003
+actor_num_hidden_layers: 2
+critic_num_hidden_layers: 2
+normalize_reward: True
+use_layernormalization: False
+actor_penalty_coef: 0.5
+critic_penalty_coef: 0.1
+# fine-grained feature transformation
+is_FFT: False
+# spatiotemporal feature-guided joint probability distribution
+is_SFJPD: False
