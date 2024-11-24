@@ -24,3 +24,4 @@ python main.py --config configs/automatic_search_asfwb.yaml
 Some of our code come from the following repository. We appreciate these authors to share their valuable codes.  
 * SCQ [SCQ](https://github.com/purewater0901/SCQ)
 * SAM2 [SAM2](https://github.com/facebookresearch/sam2)
+* CORL [CORL](https://github.com/tinkoff-ai/CORL)
