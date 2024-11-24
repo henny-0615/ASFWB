@@ -40,9 +40,9 @@ def eval_policy(policy, traj_path, seed, args, eval_indicators, eval_episodes=10
                 os.remove(file_path)
             elif os.path.isdir(file_path):
                 shutil.rmtree(file_path)
-        print(f"已清空目录: {traj_path}")
+        print(f"Empty directory: {traj_path}")
     else:
-        print(f"目录不存在: {traj_path}")
+        print(f"Directory does not exist: {traj_path}")
 
     avg_reward = 0.
     avg_step = 0
@@ -98,7 +98,7 @@ def eval_policy(policy, traj_path, seed, args, eval_indicators, eval_episodes=10
 
 if __name__ == "__main__":
     '''Split the complete video into pictures'''
-    # video_dir = r'D:\OneDrive\Desktop\Paper_2\鸟数据\丹顶鹤'
+    # video_dir = r'D:\OneDrive\Desktop\Paper_2\Birds_dataset\grus_japonensis'
     # output_dir = r'D:\Pycharm\Projects\automatic-search\datasets\train'
     #
     # video_paths = os.listdir(video_dir)
